@@ -1,0 +1,2 @@
+{"_id":{"$oid":"5db477af419117d3929ecfc9"},"matruyen":"T0001","tentruyen":"Cau Chuyen Nua Dem","loai":["kinhdi","vientuong"],"tacgia":"vo huynh yen nhi","noidung":"cauchuyennuadem"}
+{"_id":{"$oid":"5db479cfe9acbbdcec2a1d0c"},"matruyen":"T0002","tentruyen":"Ba Ngoai Ma","loai":["kinhdi","ma"],"tacgia":"Le Cong Nghia","noidung":"bangoaima"}

@@ -1,0 +1,24 @@
+<table class="table table-dark">
+    <thead>
+      <tr>
+        <!-- <th scope="col">ID</th> -->
+        <th scope="col">Tên truyện</th>
+        <th scope="col">Tác giả</th>
+        <th scope="col">Thể loại</th>
+        <th scope="col">Tùy chỉnh</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let story of listStory">
+        <!-- <th scope="row">{{story._id}}</th> -->
+        <td>{{story.tentruyen}}</td>
+        <td>{{story.tacgia}}</td>
+        <td>{{story.loai}}</td>
+        <td><button class="btn btn-danger" (click)="deleteAccount(user)" style="width: 55px;height:  38px;">Xóa</button>&nbsp;
+            <button class="btn btn-primary" (click)="updateAccount(user)" style="width: 55px;height:  38px;">Sửa</button>
+        </td>
+         
+      </tr>
+      
+    </tbody>
+  </table>

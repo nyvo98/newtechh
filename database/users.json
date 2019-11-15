@@ -1,0 +1,2 @@
+{"_id":{"$oid":"5db475f2419117d3929ecfc7"},"Ten":"My Name Is Admin","NgaySinh":"10/10/1998","sdt":"0123465789","email":"admin@gmail.com","loai":"admin","username":"admin","password":"admin"}
+{"_id":{"$oid":"5db4763a419117d3929ecfc8"},"Ten":"Vo Huynh Yen Nhi","NgaySinh":"10/10/1998","sdt":"0321654987","email":"vhynhi@gmail.com","loai":"user","username":"vhynhi","password":"123"}
