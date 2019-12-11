@@ -1,5 +1,5 @@
 var mongoose = require('mongoose');
-story = mongoose.model('storys');
+story = mongoose.model('stories');
 var fs = require('fs');
 
 

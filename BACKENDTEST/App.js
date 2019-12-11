@@ -35,18 +35,18 @@ app.get('/',function(req,res){
 })
 
 
-// let apiRouter = express.Router();
+let apiRouter = express.Router();
 
-// let auth = require('./api/authenticate/authenticate');
-// auth(apiRouter,User,jwt,superSecret);
+let auth = require('./api/authenticate/authenticate');
+auth(apiRouter,User,jwt,superSecret);
 
 
 
-// apiRouter.get('/',function(req,res){
-//     res.json({
-//         message : 'Restful Api! welcome to our api'
-//     });
-// })
+apiRouter.get('/',function(req,res){
+    res.json({
+        message : 'Restful Api! welcome to our api'
+    });
+})
 
 
 let users = require('./api/routes/userRoute');
@@ -57,7 +57,7 @@ storys(app);
 
 
 
-// app.use('/api',app);
+app.use('/api',apiRouter);
 
 
 app.listen(port,()=>{
