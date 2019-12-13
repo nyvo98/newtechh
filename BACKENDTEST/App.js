@@ -50,7 +50,7 @@ apiRouter.get('/',function(req,res){
 
 
 let users = require('./api/routes/userRoute');
-users(apiRouter);
+users(app);
 
 let storys = require('./api/routes/storyRoute');
 storys(app);

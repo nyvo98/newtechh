@@ -84,7 +84,7 @@ class LoginPage extends Component {
         <div className="bottom-container">
           <div className="row">
             <div className="col">
-              <a href="#" style={{ color: 'white' }} className="btn">Sign up</a>
+              <a onClick={()=>this.props.selectType('register')} style={{ color: 'white' }} className="btn">Sign up</a>
             </div>
             <div className="col">
               <a href="#" style={{ color: 'white' }} className="btn">Forgot password?</a>

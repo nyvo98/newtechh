@@ -5,6 +5,7 @@ import Navigation from './components/Navigation'
 import AdminPage from './pages/AdminPage'
 import { connect } from 'react-redux'
 import ListStory from './components/LIstStory'
+import Register from './pages/Register'
 
 class App extends Component {
   
@@ -17,6 +18,7 @@ class App extends Component {
           { this.props.selectType === null ? <MainPage/> :
             this.props.selectType === 'admin' ? <AdminPage/> : 
             this.props.selectType === 'login' ? <LoginPage/> :
+            this.props.selectType === 'register' ? <Register/> :
             <ListStory onSelectType={this.props.selectType}/>}
         </div>
       )
