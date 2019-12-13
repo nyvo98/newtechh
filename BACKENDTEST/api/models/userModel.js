@@ -13,7 +13,7 @@ var UserSchema = new Schema({
         city : String,
         state : String ,
         address :String,
-        areaControll : []
+        loai : String
         
   }); 
 

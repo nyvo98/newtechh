@@ -3,7 +3,7 @@ module.exports = function(apiRouter,User,jwt,superSecret){
         console.log(req.body);
         User.findOne({
             username : req.body.username
-         }).select('ten username password').exec(function(err,user){
+         }).select('loai ten username password').exec(function(err,user){
             if(err) res.send(err);0
             if(!user){
                 res.json({
@@ -20,11 +20,14 @@ module.exports = function(apiRouter,User,jwt,superSecret){
                 }else{
                     let token = jwt.sign({
                         name : user.name,
-                        username : user.username
+                        username : user.username,
+                        
                     },superSecret);
                     res.json({
                         success : true,
                         message : 'User da duoc cap phat token!',
+                        role : user.loai,
+                        username : user.username,
                         token : token
                     })
                 }

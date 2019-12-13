@@ -9,5 +9,7 @@ module.exports = function(app){
         .get(story.read_a_story)
         .put(story.update_a_story)
         .delete(story.delete_a_story)
+    app.route('/storiesbyloai/:loai')
+        .get(story.read_a_story_byloai)
     
 };

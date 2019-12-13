@@ -55,3 +55,14 @@ exports.delete_a_story = function(req,res){
     res.json(story);
   })
 }
+
+
+exports.read_a_story_byloai = function(req,res){
+  story.find({'loai':req.params.loai}, function(err, story) {
+    
+    if (err)
+      res.send(err);
+    res.json(story);
+      
+  });
+}

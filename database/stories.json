@@ -1,2 +1,24 @@
-{"_id":{"$oid":"5db477af419117d3929ecfc9"},"matruyen":"T0001","tentruyen":"Cau Chuyen Nua Dem","loai":["kinhdi","vientuong"],"tacgia":"vo huynh yen nhi","noidung":"cauchuyennuadem"}
-{"_id":{"$oid":"5db479cfe9acbbdcec2a1d0c"},"matruyen":"T0002","tentruyen":"Ba Ngoai Ma","loai":["kinhdi","ma"],"tacgia":"Le Cong Nghia","noidung":"bangoaima"}
+{
+    "matruyen": "T0001",
+    "tentruyen": "Cau Chuyen Nua Dem",
+    "loai": [
+        "kinhdi",
+        "vientuong"
+    ],
+    "tacgia": "vo huynh yen nhi",
+    "noidung": "cauchuyennuadem",
+    "tieude" : "Vào một đêm mưa thanh vắng, khi bống tối tràn ngập khắp các con phố",
+    "img" : "image/cover1.jpg"
+},
+{
+    "matruyen": "T0002",
+    "tentruyen": "Ba Ngoai Ma",
+    "loai": [
+        "kinhdi",
+        "ma"
+    ],
+    "tacgia": "Le Cong Nghia",
+    "noidung": "bangoaima",
+    "tieude" : "Trong một ngôi nhà hoang vu cuối hẻm, xuất hiện những tiếng khóc..",
+    "img" : "image/cover2.jpg"
+}
